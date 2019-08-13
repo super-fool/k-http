@@ -39,8 +39,20 @@
 - 应用层（应用层+表示层+会话层）
 
 
+# 用户在浏览器输入地址后发生了什么？
 
+### 解析URL
+
+浏览器首先会**解析**地址，可以判断出是用的那一类协议，HTTP还是FTP等应用层协议。如果地址不合法就会调用默认搜索引擎进行搜索。
+
+### DNS解析
+
+- 浏览器首先会从缓存中查找
+- 从本地host文件中查找
+- 浏览器将地址发送给DNS服务器找到相应的IP地址返回给浏览器。
+- 浏览器再将IP地址发送给
 
 # 参考
 
-1. https://www.cnblogs.com/qishui/p/5428938.html
+1. 七层模型：https://www.cnblogs.com/qishui/p/5428938.html
+2. 输入URL地址发生了什么： https://blog.csdn.net/coolwriter/article/details/80569851
